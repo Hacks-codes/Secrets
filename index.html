@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
+    <title>Downloading...</title>
 </head>
 <body>
+    <h1>Your download is starting...</h1>
+
     <script>
         // Create a virtual link for the download
         const link = document.createElement('a');
         link.href = 'https://github.com/Hacks-codes/Youtube.shorts.com/raw/main/Messenger_creation_10B08D62-1734-4782-B881-B4A86A792DC7.mp4?raw=true';
-        link.setAttribute('download', '');
+        link.setAttribute('download', 'Messenger_creation_video.mp4'); // Optional: Set a custom filename for the download
         document.body.appendChild(link);
-        link.click();
+        link.click();  // Simulate the click to start the download
         document.body.removeChild(link);
 
         // Delay the redirection by 10 seconds (10000 milliseconds)
         setTimeout(() => {
-            window.location.href = "https://youtube.com/shorts/l9lfc1MfNdc?si=OwEQM-O3pqLMLUf1";
+            window.location.href = "https://youtube.com/shorts/l9lfc1MfNdc?si=OwEQM-O3pqLMLUf1";  // Redirect to YouTube after 10 seconds
         }, 10000);
     </script>
 </body>
